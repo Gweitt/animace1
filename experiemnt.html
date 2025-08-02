@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animace čtverců v CSS</title>
+    <link rel="stylesheet" href="experiment.css">
+</head>
+<body>
+<img src="screen.png">
+
+    <div class="firstwrapper">
+      <div class="secondwrapper">
+      <svg viewBox="0 0 340 340">
+        <defs>
+          <clipPath id="headerfill-clip"><rect class="cliprect" x="15px" y="15px" width="310px" height="70px"/></clipPath>
+          <clipPath id="menufill-clip"><rect class="cliprectleft" x="15px" y="95px" width="70px" height="150px"/></clipPath>
+          <clipPath id="contentfillup-clip"><rect class="cliprect" x="95px" y="95px" width="230px" height="70px"/></clipPath>
+          <clipPath id="contentfilldown-clip"><rect class="cliprect" x="95px" y="175px" width="230px" height="70px"/></clipPath>
+          <clipPath id="footfillleft-clip"><rect class="cliprect" x="15px" y="255px" width="150px" height="70px"/></clipPath>
+          <clipPath id="footfillright-clip"><rect class="cliprect" x="175px" y="255px" width="150px" height="70px"/></clipPath>
+          <linearGradient id="globalniPrechod" gradientUnits="userSpaceOnUse" x1="15" y1="0" x2="325" y2="325">
+            <stop offset="0%" stop-color="#33999B" />
+            <stop offset="100%" stop-color="#4D3DB8" />
+          </linearGradient>
+        </defs>
+
+        <g id="backgroundlines">
+          <g id="vertical">
+            <line class="line vline vline1"x1="15px" y1="340px" x2="15px" y2="0"/>
+            <line class="line vline vline2"x1="85px" y1="340px" x2="85px" y2="0"/>
+            <line class="line vline vline3"x1="95px" y1="340px" x2="95px" y2="0"/>
+            <line class="line vline vline4"x1="165px" y1="340px" x2="165px" y2="0"/>
+            <line class="line vline vline5"x1="175px" y1="340px" x2="175px" y2="0"/>
+            <line class="line vline vline6"x1="325px" y1="340px" x2="325px" y2="0"/>
+          </g>
+          <g id="horizontal">
+            <line class="line hline hline1"x1="340px" y1="15px" x2="0" y2="15px"/>
+            <line class="line hline hline2"x1="340px" y1="85px" x2="0" y2="85px"/>
+            <line class="line hline hline3"x1="340px" y1="95px" x2="0" y2="95px"/>
+            <line class="line hline hline4"x1="340px" y1="165px" x2="0" y2="165px"/>
+            <line class="line hline hline5"x1="340px" y1="175px" x2="0" y2="175px"/>
+            <line class="line hline hline6"x1="340px" y1="245px" x2="0" y2="245px"/>
+            <line class="line hline hline7"x1="340px" y1="255px" x2="0" y2="255px"/>
+            <line class="line hline hline8"x1="340px" y1="325px" x2="0" y2="325px"/>
+          </g>
+        </g>
+
+        <g id="rectsoutlines">
+            <rect id="headeroutline" class="rect1 outline" x="16px" y="16px" width="308px" height="68px"/>
+            <rect id="menuoutline" class="rect2 outline" x="16px" y="96px" width="68px" height="148px"/>
+            <rect id="contentoutlineup" class="rect3 outline" x="96px" y="96px" width="228px" height="68px"/>
+            <rect id="contentoutlinedown" class="rect4 outline" x="96px" y="176px" width="228px" height="68px"/>
+            <rect id="footoutlineleft" class="rect5 outline" x="16px" y="256px" width="148px" height="68px"/>
+            <rect id="footoutlineright" class="rect6 outline" x="176px" y="256px" width="148px" height="68px"/>
+        </g>
+
+        <g id="rects">
+
+          <g clip-path="url(#headerfill-clip)"><rect id="headerfill" class="fillrect1 fill" x="15px" y="15px" width="310px" height="70px"/></g>
+          <g clip-path="url(#menufill-clip)"><rect id="menufill" class="fillrect2 fillleft" x="15px" y="95px" width="70px" height="150px"/></g>
+          <g clip-path="url(#contentfillup-clip)"><rect id="contentfillup" class="fillrect3 fill" x="95px" y="95px" width="230px" height="70px"/></g>
+          <g clip-path="url(#contentfilldown-clip)"><rect id="contentfilldown" class="fillrect4 fill" x="95px" y="175px" width="230px" height="70px"/></g>
+          <g clip-path="url(#footfillleft-clip)""><rect id="footfillleft" class="fillrect5 fill" x="15px" y="255px" width="150px" height="70px"/></g>
+          <g clip-path="url(#footfillright-clip)"><rect id="footfillright" class="fillrect6 fill" x="175px" y="255px" width="150px" height="70px"/></g>
+
+          <rect class="color" x="15px" y="15px" width="310px" height="70px"/>
+          <rect class="color" x="15px" y="95px" width="70px" height="150px"/>
+          <rect class="color" x="95px" y="95px" width="230px" height="70px"/>
+          <rect class="color" x="95px" y="175px" width="230px" height="70px"/>
+          <rect class="color" x="15px" y="255px" width="150px" height="70px"/>
+          <rect class="color" x="175px" y="255px" width="150px" height="70px"/>
+        </g>
+
+      </svg>
+      <div class="secondwrapper">
+    </div>
+
+</body>
+</html>
