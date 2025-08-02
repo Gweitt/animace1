@@ -5,7 +5,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #1a1a2e;
-    overflow: hidden;
+    overflow: auto;
 }
 
 svg {
@@ -176,3 +176,4 @@ img {
 @keyframes color {
     100% {opacity: 1;}
 }
+
