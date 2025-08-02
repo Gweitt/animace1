@@ -75,7 +75,7 @@ img {
 
 .outline {
   stroke-linejoin: round;
-  stroke: white;
+  stroke: #33999B;
   stroke-width: 1;
   stroke-dasharray: 350px;
   stroke-dashoffset: 350px;
@@ -89,7 +89,7 @@ img {
 }
 
 .fill {
-  fill: white;
+  fill: #33999B;
   transform: translateY(70px);
   animation-name: fill;
   animation-duration: 0.5s;
@@ -100,7 +100,7 @@ img {
 
 /* musí být stejné jako fill! */
 .fillleft {
-  fill: white;
+  fill: #33999B;
   transform: translateX(70px);
   animation-name: fillleft;
   animation-duration: 0.5s;
@@ -176,4 +176,5 @@ img {
 @keyframes color {
     100% {opacity: 1;}
 }
+
 
